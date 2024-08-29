@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php'; // menyertakan file konfigurasi
+include 'config/koneksi.php'; // menyertakan file konfigurasi
 session_start(); // Pastikan session dimulai
 
 // Cek apakah pengguna sudah login
@@ -50,7 +50,7 @@ try {
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="http://localhost/paketwisata/">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#paket-wisata">Destinasi</a>

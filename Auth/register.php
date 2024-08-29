@@ -38,7 +38,7 @@ unset($_SESSION['success']);
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('image/jumbotron.jpg') no-repeat center center;
+            background: url('../image/jumbotron.jpg') no-repeat center center;
             background-size: cover;
             z-index: -1; /* Place the image behind the card */
         }
@@ -59,7 +59,7 @@ unset($_SESSION['success']);
             margin: 0 auto 20px;
             width: 120px; /* Adjust width as needed */
             height: 120px; /* Adjust height as needed */
-            background: url('image/package1.jpg') no-repeat center center;
+            background: url('../image/package1.jpg') no-repeat center center;
             background-size: cover;
             border-radius: 50%;
         }

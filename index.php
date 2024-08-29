@@ -1,5 +1,5 @@
 <?php
-include 'koneksi.php'; // menyertakan file konfigurasi
+include 'config/koneksi.php'; // menyertakan file konfigurasi
 session_start(); // Pastikan session dimulai
 
 // Cek apakah pengguna sudah login
@@ -66,7 +66,7 @@ try {
         <?php if ($is_logged_in): ?>
             <a href="http://localhost/paketwisata/dashboard.php" class="btn login-button">Dashboard</a>
         <?php else: ?>
-            <a href="http://localhost/paketwisata/login.php" class="btn login-button">Login</a>
+            <a href="http://localhost/paketwisata/auth/login.php" class="btn login-button">Login</a>
         <?php endif; ?>
     </div>
 </nav>
@@ -131,7 +131,7 @@ try {
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                         </div>
-                        <a href="reservasi.php?id=<?= $paket['id'] ?>" class="btn btn-primary">Reservasi</a>
+                        <a href="reservasi/reservasi.php?id=<?= $paket['id'] ?>" class="btn btn-primary">Reservasi</a>
                     </div>
                 </div>
             </div>

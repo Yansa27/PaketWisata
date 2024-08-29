@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'koneksi.php'; // Pastikan file ini berisi koneksi ke database
+include '../config/koneksi.php'; // Pastikan file ini berisi koneksi ke database
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_name'] = $user['name'];
 
             // Redirect ke halaman dashboard atau home
-            header("Location: dashboard.php");
+            header("Location: ../dashboard.php");
             exit();
         } else {
             // Password salah

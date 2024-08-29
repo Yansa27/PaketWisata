@@ -46,7 +46,7 @@
 
 <!-- Nav Item - List Reservasi -->
 <li class="nav-item <?php echo ($_SERVER['REQUEST_URI'] === '/paketwisata/list_reservasi.php') ? 'active' : ''; ?>">
-    <a class="nav-link" href="/paketwisata/list_reservasi.php">
+    <a class="nav-link" href="/paketwisata/reservasi/list_reservasi.php">
         <i class="fas fa-fw fa-list"></i>
         <span>List Reservasi</span>
     </a>
@@ -65,7 +65,7 @@
 
 <!-- Nav Item - Logout -->
 <li class="nav-item">
-    <a class="nav-link" href="logout.php">
+    <a class="nav-link" href="/paketwisata/auth/logout.php">
         <i class="fas fa-fw fa-sign-out-alt"></i>
         <span>Logout</span>
     </a>

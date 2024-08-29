@@ -1,15 +1,16 @@
 <?php
 session_start();
-include 'koneksi.php'; // Pastikan file ini berisi koneksi ke database
+include '../config/koneksi.php'; // Pastikan file ini berisi koneksi ke database
 
 // Ambil ID paket dari parameter query
 $paket_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
 // Cek apakah pengguna sudah login
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php"); 
+    header("Location: http://localhost/paketwisata/auth/login.php"); 
     exit;
 }
+
 
 // Koneksi ke database
 $conn = new mysqli('localhost', 'root', '', 'paketwisata');

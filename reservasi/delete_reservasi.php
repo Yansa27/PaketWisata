@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'koneksi.php'; // Pastikan file ini berisi koneksi ke database
+include '../config/koneksi.php'; // Pastikan file ini berisi koneksi ke database
 
 // Cek apakah pengguna sudah login
 if (!isset($_SESSION['user_id'])) {

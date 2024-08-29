@@ -1,7 +1,7 @@
 <?php
 session_start(); 
 
-include 'koneksi.php'; 
+include '../config/koneksi.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +10,8 @@ include 'koneksi.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Reservasi - Paket Wisata</title>
-    <link href="assetAdmin/css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="assetAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../assetAdmin/css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../assetAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 </head>
 
@@ -214,7 +214,7 @@ include 'koneksi.php';
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assetAdmin/js/sb-admin-2.min.js"></script>
+    <script src="../assetAdmin/js/sb-admin-2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script>
         $(document).ready(function() {
